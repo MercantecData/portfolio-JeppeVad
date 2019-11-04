@@ -1,0 +1,11 @@
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\bin\Debug\netcoreapp3.0\Tæller.exe
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\bin\Debug\netcoreapp3.0\Tæller.deps.json
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\bin\Debug\netcoreapp3.0\Tæller.runtimeconfig.json
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\bin\Debug\netcoreapp3.0\Tæller.runtimeconfig.dev.json
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\bin\Debug\netcoreapp3.0\Tæller.dll
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\bin\Debug\netcoreapp3.0\Tæller.pdb
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\obj\Debug\netcoreapp3.0\Tæller.csprojAssemblyReference.cache
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\obj\Debug\netcoreapp3.0\Tæller.AssemblyInfoInputs.cache
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\obj\Debug\netcoreapp3.0\Tæller.AssemblyInfo.cs
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\obj\Debug\netcoreapp3.0\Tæller.dll
+C:\Users\jepny\Desktop\portfolio\Tæller\Tæller\obj\Debug\netcoreapp3.0\Tæller.pdb
