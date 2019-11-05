@@ -13,11 +13,12 @@ namespace blib_opgave
             BookList.Add(new Books("Sommer of 99", "Jane Doe", 182, true));
             BookList.Add(new Books("Carl Smart", "Andersen", 124, true));
             Console.WriteLine("Book list!");
-            Console.WriteLine(BookList[0].bookName + " " + BookList[0].author);
-            Console.WriteLine(BookList[1].bookName + " " + BookList[1].author);
-            Console.WriteLine(BookList[2].bookName + " " + BookList[2].author);
+            Console.WriteLine("[1]" + BookList[0].bookName + " " + BookList[0].author);
+            Console.WriteLine("[2]" + BookList[1].bookName + " " + BookList[1].author);
+            Console.WriteLine("[3]" + BookList[2].bookName + " " + BookList[2].author);
             Console.WriteLine("=========================================================");
             Console.WriteLine("Rent book wich 1, 2 ,3?");
+
             string numbr = Console.ReadLine();
             if (numbr == "1")
             {
@@ -58,9 +59,9 @@ namespace blib_opgave
             Console.Clear();
             Console.WriteLine("Return book! wich would you like to return? 1, 2 or 3 ");
             Console.WriteLine("Book list!");
-            Console.WriteLine(BookList[0].bookName + " " + BookList[0].author);
-            Console.WriteLine(BookList[1].bookName + " " + BookList[1].author);
-            Console.WriteLine(BookList[2].bookName + " " + BookList[2].author);
+            Console.WriteLine("[1]" + BookList[0].bookName + " " + BookList[0].author);
+            Console.WriteLine("[2]" + BookList[1].bookName + " " + BookList[1].author);
+            Console.WriteLine("[3]" + BookList[2].bookName + " " + BookList[2].author);
             Console.WriteLine("=========================================================");
             string numb = Console.ReadLine();
             if(numb == "1")
@@ -100,9 +101,14 @@ namespace blib_opgave
                     Console.WriteLine("Book alrdy returned");
                 }
             }
-
-
-
+        }
+        public string ADD(string name)
+        {
+            return name;
+        }
+        public int ADD(int age)
+        {
+            return age;
         }
     }
 }
