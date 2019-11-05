@@ -24,6 +24,7 @@ namespace blib_opgave
             {
                 Console.Write("Enter name: ");
                 ADD n = new ADD(Console.ReadLine());
+                Console.Write("Enter age: ");
                 ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (BookList[0].available == true)
                 {
@@ -39,7 +40,9 @@ namespace blib_opgave
             {
                 Console.Write("Enter name: ");
                 ADD n = new ADD(Console.ReadLine());
+                Console.Write("Enter age: ");
                 ADD p = new ADD(Int32.Parse(Console.ReadLine()));
+
                 if (BookList[1].available == true)
                 {
                     Console.WriteLine(n + "is " + p + " and rented the book!"); 
@@ -54,6 +57,7 @@ namespace blib_opgave
             {
                 Console.Write("Enter name: ");
                 ADD n = new ADD(Console.ReadLine());
+                Console.Write("Enter age: ");
                 ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (BookList[2].available == true)
                 {
@@ -75,10 +79,13 @@ namespace blib_opgave
             string numb = Console.ReadLine();
             if(numb == "1")
             {
-                if(BookList[0].available == false)
+                Console.Write("Enter name: ");
+                ADD n = new ADD(Console.ReadLine());
+                ADD p = new ADD(Int32.Parse(Console.ReadLine()));
+                if (BookList[0].available == false)
                 {
                     BookList[0].available = true;
-                    Console.WriteLine("You returned the book :" + BookList[0].bookName);
+                    Console.WriteLine(n + "is " + p + " and returned the book!" + BookList[0].bookName);
                 }
                 else
                 {
@@ -87,10 +94,13 @@ namespace blib_opgave
             }
             else if (numb == "2")
             {
+                Console.Write("Enter name: ");
+                ADD n = new ADD(Console.ReadLine());
+                ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (BookList[1].available == false)
                 {
                     BookList[1].available = true;
-                    Console.WriteLine("You returned the book :" + BookList[1].bookName);
+                    Console.WriteLine(n + "is " + p + " and returned the book!" + BookList[1].bookName);
                 }
                 else
                 {
@@ -100,10 +110,13 @@ namespace blib_opgave
             }
             else if (numb == "3")
             {
+                Console.Write("Enter name: ");
+                ADD n = new ADD(Console.ReadLine());
+                ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (BookList[2].available == false)
                 {
                     BookList[2].available = true;
-                    Console.WriteLine("You returned the book: " + BookList[2].bookName);
+                    Console.WriteLine(n + "is " + p + " and returnd the book!" + BookList[2].bookName);
                 }
                 else
                 {
