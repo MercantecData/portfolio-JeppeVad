@@ -22,9 +22,12 @@ namespace blib_opgave
             string numbr = Console.ReadLine();
             if (numbr == "1")
             {
+                Console.Write("Enter name: ");
+                ADD n = new ADD(Console.ReadLine());
+                ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (BookList[0].available == true)
                 {
-                    Console.WriteLine("You rented the book!");
+                    Console.WriteLine(n + "is " + p + " and rented the book!");
                     BookList[0].available = false;
                 }
                 else
@@ -34,9 +37,12 @@ namespace blib_opgave
             }
             else if (numbr == "2")
             {
+                Console.Write("Enter name: ");
+                ADD n = new ADD(Console.ReadLine());
+                ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (BookList[1].available == true)
                 {
-                    Console.WriteLine("You rented the book!");
+                    Console.WriteLine(n + "is " + p + " and rented the book!"); 
                     BookList[1].available = false;
                 }
                 else
@@ -46,9 +52,12 @@ namespace blib_opgave
             }
             else if (numbr == "3")
             {
+                Console.Write("Enter name: ");
+                ADD n = new ADD(Console.ReadLine());
+                ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (BookList[2].available == true)
                 {
-                    Console.WriteLine("You rented the book!");
+                    Console.WriteLine(n + "is " + p + " and rented the book!");
                     BookList[2].available = false;
                 }
                 else
@@ -101,14 +110,8 @@ namespace blib_opgave
                     Console.WriteLine("Book alrdy returned");
                 }
             }
+            
         }
-        public string ADD(string name)
-        {
-            return name;
-        }
-        public int ADD(int age)
-        {
-            return age;
-        }
+        
     }
 }
