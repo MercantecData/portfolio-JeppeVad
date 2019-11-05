@@ -7,12 +7,16 @@ namespace blib_opgave
     class BookAvailable
     {
         public bool available;
-        public int returnTime;
+        public uint returnTime;
 
-        public BookAvailable(bool available, int returnTime)
+        public BookAvailable(bool available, uint returnTime)
         {
             this.available = available;
             this.returnTime = returnTime;
         }
+
+
+
+
     }
 }

@@ -9,16 +9,18 @@ namespace blib_opgave
         public string bookName;
         public string author;
         public int pages;
-        public BookAvailable available;
+        public bool available;
 
         
 
-        public Books(string bookName, string author, int pages, BookAvailable available)
+        public Books(string bookName, string author, int pages, bool available)
         {
             this.bookName = bookName;
             this.author = author;
             this.pages = pages;
             this.available = available;
         }
+
+        
     }
 }
