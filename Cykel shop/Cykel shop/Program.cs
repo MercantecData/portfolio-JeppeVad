@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Cykel_shop
 {
@@ -6,7 +7,8 @@ namespace Cykel_shop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<Bicycle> bicycles = new List<Bicycle>();
+
         }
     }
 }
