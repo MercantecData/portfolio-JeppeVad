@@ -11,7 +11,7 @@ namespace blib_opgave
         public int pages;
         public bool available;
 
-        
+
 
         public Books(string bookName, string author, int pages, bool available)
         {
@@ -20,7 +20,7 @@ namespace blib_opgave
             this.pages = pages;
             this.available = available;
         }
-
+        
         
     }
 }

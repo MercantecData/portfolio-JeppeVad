@@ -7,7 +7,7 @@ namespace Cykel_shop
     class BicycleShop
     {
         public string name;
-        public List<Bicycle> bicycles = new List<Bicycle>();
+        List<Bicycle> bicycles = new List<Bicycle>();
 
         public BicycleShop(string name)
         {
@@ -18,7 +18,13 @@ namespace Cykel_shop
             for (int i = 0; i < bicycles.Count; i++)
             {
                 Console.WriteLine(bicycles[i].brand);
-                
+            }
+        }
+        public double over(double o)
+        {
+            for (int i = 0; i < bicycles.Count; i++)
+            {
+                return bicycles[i].wheelSize;
             }
         }
 

@@ -6,6 +6,7 @@ namespace Cykel_shop
 {
     class Bicycle
     {
+        
         public string brand;
         public string color;
         public int wheelSize;
