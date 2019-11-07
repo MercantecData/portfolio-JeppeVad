@@ -9,17 +9,15 @@ namespace blib_opgave
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the library");
-            createBook("Navn", "author", 321, true);
-            bookList.Add(new Books("Cartel", "John Doe", 244, true));
-            bookList.Add(new Books("Sommer of 99", "Jane Doe", 182, true));
-            bookList.Add(new Books("Carl Smart", "Andersen", 124, true));
-
+            createBook("Navn", "- author", 321, true);
+            bookList.Add(new Books("Cartel", "- John Doe", 244, true));
+            bookList.Add(new Books("Sommer of 99", "- Jane Doe", 182, true));
+            bookList.Add(new Books("Carl Smart", "- Andersen", 124, true));
+            int somting = bookList.Count - 1;
             Console.WriteLine("Book list!");
-            Console.WriteLine("[1]" + bookList[0].bookName + " " + bookList[0].author);
-            Console.WriteLine("[2]" + bookList[1].bookName + " " + bookList[1].author);
-            Console.WriteLine("[3]" + bookList[2].bookName + " " + bookList[2].author);
+            printBooklist();
             Console.WriteLine("=========================================================");
-            Console.WriteLine("Rent book wich 1, 2 ,3?");
+            Console.WriteLine("Rent book wich from 0 to " + somting);
 
             string numbr = Console.ReadLine();
             if (numbr == "1")
@@ -72,11 +70,9 @@ namespace blib_opgave
                 }
             }
             Console.Clear();
-            Console.WriteLine("Return book! wich would you like to return? 1, 2 or 3 ");
+            Console.WriteLine("Return book! wich would you like to return? 0 to " + somting);
             Console.WriteLine("Book list!");
-            Console.WriteLine("[1]" + bookList[0].bookName + " " + bookList[0].author);
-            Console.WriteLine("[2]" + bookList[1].bookName + " " + bookList[1].author);
-            Console.WriteLine("[3]" + bookList[2].bookName + " " + bookList[2].author);
+            printBooklist();
             Console.WriteLine("=========================================================");
             string numb = Console.ReadLine();
             if(numb == "1")
@@ -130,6 +126,13 @@ namespace blib_opgave
         public static void createBook(string bookname, string author, int pages, bool available)
         {
             bookList.Add(new Books(bookname, author, pages, available));
+        }
+        public static void printBooklist ()
+        {
+            for (int i = 0; i < bookList.Count; i++)
+            {
+                Console.WriteLine("[" + i + "]" + bookList[i].bookName + " " + bookList[i].author);
+            }
         }
     }
 }
