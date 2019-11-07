@@ -20,7 +20,7 @@ namespace blib_opgave
             this.pages = pages;
             this.available = available;
         }
-        
-        
+
+
     }
 }

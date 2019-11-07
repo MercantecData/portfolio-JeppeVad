@@ -8,11 +8,12 @@ namespace blib_opgave
     {
         
         public int booksInLibrary;
-        Books booklist 
+        
         public Library(int booksInLibrary)
         {
             this.booksInLibrary = booksInLibrary;
         }
+        public List<Books> bookList = new List<Books>();
 
     }
 
