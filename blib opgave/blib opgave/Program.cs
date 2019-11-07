@@ -8,13 +8,17 @@ namespace blib_opgave
         static List<Books> bookList = new List<Books>();
         static void Main(string[] args)
         {
+            List<Books> bookList = new List<Books>();
             Console.WriteLine("Welcome to the library");
             createBook("Navn", "- author", 321, true);
             bookList.Add(new Books("Cartel", "- John Doe", 244, true));
             bookList.Add(new Books("Sommer of 99", "- Jane Doe", 182, true));
             bookList.Add(new Books("Carl Smart", "- Andersen", 124, true));
+            int tgrsvd = bookList.Count;
+            Library myLibrary = new Library(tgrsvd);
             int somting = bookList.Count - 1;
             Console.WriteLine("Book list!");
+            Console.WriteLine("There is " + myLibrary + " books in the library");
             printBooklist();
             Console.WriteLine("=========================================================");
             Console.WriteLine("Rent book wich from 0 to " + somting);
@@ -61,7 +65,7 @@ namespace blib_opgave
                 ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (bookList[2].available == true)
                 {
-                    Console.WriteLine(n + "is " + p + " and rented the book!");
+                    Console.WriteLine(n + " is " + p + " and rented the book!");
                     bookList[2].available = false;
                 }
                 else

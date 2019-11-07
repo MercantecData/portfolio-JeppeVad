@@ -4,7 +4,8 @@ using System.Text;
 
 namespace blib_opgave
 {
-    class ADD
+    class ADD //Bruger for at vise override
+
     {
         
         public ADD(string name)
