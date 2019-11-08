@@ -19,16 +19,40 @@ namespace blib_opgave
             Console.WriteLine("Book list!");
             Console.WriteLine("There is " + bookList.Count + " books in the library");
             printBooklist();
-            Console.WriteLine("=========================================================");
+            breakline();
             Console.WriteLine("Rent book wich from 0 to " + somting);
+            
+            lånbook(Console.ReadLine());
+            
 
-            string numbr = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Return book! wich would you like to return? 0 to " + somting);
+            Console.WriteLine("Book list!");
+            printBooklist();
+            breakline();
+            returneerbog(Console.ReadLine());
+            
+        }
+        public static void createBook(string bookname, string author, int pages, bool available)
+        {
+            bookList.Add(new Books(bookname, author, pages, available));
+        }
+        public static void printBooklist ()
+        {
+            for (int i = 0; i < bookList.Count; i++)
+            {
+                Console.WriteLine("[" + i + "]" + bookList[i].bookName + " " + bookList[i].author);
+            }
+        }
+        public static void lånbook (string numbr)
+        {
             if (numbr == "1")
             {
                 Console.Write("Enter name: ");
                 ADD n = new ADD(Console.ReadLine());
                 Console.Write("Enter age: ");
                 ADD p = new ADD(Int32.Parse(Console.ReadLine()));
+
                 if (bookList[0].available == true)
                 {
                     Console.WriteLine(n + "is " + p + " and rented the book!");
@@ -62,6 +86,7 @@ namespace blib_opgave
                 ADD n = new ADD(Console.ReadLine());
                 Console.Write("Enter age: ");
                 ADD p = new ADD(Int32.Parse(Console.ReadLine()));
+
                 if (bookList[2].available == true)
                 {
                     Console.WriteLine(n + " is " + p + " and rented the book!");
@@ -72,13 +97,24 @@ namespace blib_opgave
                     Console.WriteLine("Book already rented out");
                 }
             }
-            Console.Clear();
-            Console.WriteLine("Return book! wich would you like to return? 0 to " + somting);
-            Console.WriteLine("Book list!");
-            printBooklist();
-            Console.WriteLine("=========================================================");
-            string numb = Console.ReadLine();
-            if(numb == "1")
+        }
+        public static ADD info()
+        {
+            Console.Write("Enter name: ");
+            ADD n = new ADD(Console.ReadLine());
+            Console.Write("Enter age: ");
+            ADD p = new ADD(Int32.Parse(Console.ReadLine()));
+            return n;
+            
+        }
+        public static void breakline()
+        {
+            Console.WriteLine("_________________________________________________________________________________");
+            Console.WriteLine("=================================================================================");
+        }
+        public static void returneerbog(string numb)
+        {
+            if (numb == "1")
             {
                 Console.Write("Enter name: ");
                 ADD n = new ADD(Console.ReadLine());
@@ -124,18 +160,7 @@ namespace blib_opgave
                     Console.WriteLine("Book alrdy returned");
                 }
             }
-            
-        }
-        public static void createBook(string bookname, string author, int pages, bool available)
-        {
-            bookList.Add(new Books(bookname, author, pages, available));
-        }
-        public static void printBooklist ()
-        {
-            for (int i = 0; i < bookList.Count; i++)
-            {
-                Console.WriteLine("[" + i + "]" + bookList[i].bookName + " " + bookList[i].author);
-            }
+
         }
     }
 }
