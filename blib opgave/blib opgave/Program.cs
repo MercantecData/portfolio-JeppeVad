@@ -118,6 +118,7 @@ namespace blib_opgave
             {
                 Console.Write("Enter name: ");
                 ADD n = new ADD(Console.ReadLine());
+                Console.Write("Enter age: ");
                 ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (bookList[0].available == false)
                 {
@@ -133,6 +134,7 @@ namespace blib_opgave
             {
                 Console.Write("Enter name: ");
                 ADD n = new ADD(Console.ReadLine());
+                Console.Write("Enter age: ");
                 ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (bookList[1].available == false)
                 {
@@ -149,6 +151,7 @@ namespace blib_opgave
             {
                 Console.Write("Enter name: ");
                 ADD n = new ADD(Console.ReadLine());
+                Console.Write("Enter age: ");
                 ADD p = new ADD(Int32.Parse(Console.ReadLine()));
                 if (bookList[2].available == false)
                 {

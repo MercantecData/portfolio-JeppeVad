@@ -20,16 +20,12 @@ namespace Cykel_shop
                 Console.WriteLine(bicycles[i].brand);
             }
         }
-        public double over(double o)
+        /*public double Ssver(double o)
         {
             for (int i = 0; i < bicycles.Count; i++)
             {
                 return bicycles[i].wheelSize;
             }
-        }
-
-        
-        
-        
+        } */       
     }
 }
