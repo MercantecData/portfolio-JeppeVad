@@ -1,10 +1,30 @@
 body {
     background-color: lightblue;
     margin-left: 375px;
+    background-size: cover;
+    position: relative;
 }
 h1 {
     color: lightcyan;
 }
 .erdusej {
     color: red;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline;
+}
+.aboutm {
+    font-style: italic;
+}
+.Header{
+    color: lightgray;
+}
+.image {
+    position: absolute;
+    margin-right: 80px;
 }

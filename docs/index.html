@@ -2,6 +2,11 @@
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="scripts.js"></script>  
 <body>
+    <ul>
+        <li><a href="index.html">Startside</a></li>
+        <li><a href="aboutMe.html">Om mig side</a></li>
+    </ul>
+
     <h1>Velkommen til min side!</h1>
     <h2>Den er sej!</h2>
     <h4>Af Jeppe Vad</h4>
@@ -14,13 +19,15 @@
     <a href="http://www.borupif.dk/">Fodbold klub</a>
     <br>
     <p >Godt nok ikke billede af mig men det er vel også ok</p>
-    <img id="demo" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="sky with nordenlight???">
+    <div id="image">
+        <img id="demo" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="sky with nordenlight???">
+    </div>
     <br>
     <button id="demo" 
-        onclick="buttonClick()">Klik for at skjule billedet
+        onclick="buttonClickHide()">Klik for at skjule billedet
     </button>
-    <button type="button"
-        onclick="document.getElementById('demo').style.display='block'">Klik for at vise billedet
+    <button id="demo" 
+        onclick="buttonClickShow()">Klik for at se billedet
     </button>
     <br>
     <button onclick="this.innerHTML=Date()">Klokken er?</button>
