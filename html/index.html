@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="scripts.js"></script>  
 <body>
     <h1>Velkommen til min side!</h1>
     <h2>Den er sej!</h2>
@@ -15,8 +16,8 @@
     <p >Godt nok ikke billede af mig men det er vel også ok</p>
     <img id="demo" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="sky with nordenlight???">
     <br>
-    <button type="button"
-        onclick="document.getElementById('demo').style.display='none'">Klik for at skjule billedet
+    <button id="demo" 
+        onclick="buttonClick()">Klik for at skjule billedet
     </button>
     <button type="button"
         onclick="document.getElementById('demo').style.display='block'">Klik for at vise billedet
