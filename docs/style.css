@@ -24,7 +24,9 @@ li{
 .Header{
     color: lightgray;
 }
-.image {
-    position: absolute;
-    margin-right: 80px;
+button {
+    border:2px solid lightgray;
+    background-color: lime;
+    color: red;
+    padding: 3px, 5px;
 }
