@@ -1,8 +1,10 @@
 body {
     background-color: lightblue;
-    margin-left: 375px;
     background-size: cover;
     position: relative;
+}
+.bodyet {
+    margin-left: 400px;
 }
 h1 {
     color: lightcyan;
@@ -30,3 +32,19 @@ button {
     color: red;
     padding: 3px, 5px;
 }
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50px auto;
+    height: 100vh;
+    grid-template-areas: 
+    "Overskrift Overskrift"
+    "omMig heybuddy";
+}
+.Overskrift {
+    -ms-grid-row-span: 1/2;
+}
+.heybuddy {
+    grid-area: heybuddy;
+}
+

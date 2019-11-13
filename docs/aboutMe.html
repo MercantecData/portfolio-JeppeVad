@@ -3,34 +3,42 @@
 <script type="text/javascript" src="scripts.js"></script>  
 
 <body>
-    <ul>
-        <li><a href="index.html">Startside</a></li>
-        <li><a href="aboutMe.html">Om mig side</a></li>
-    </ul>
-
-    <h1 id="Header">Denne side er om mig</h1> 
-    <br>
-    <p id="aboutm">Jeg hedder Jeppe og jeg er ikke særlig god til html/css/js</p>
-    <br>
-    <p>Mine favorit biler er: </p>
-    <!--Viser hvilke mine favorit biler er-->
-    <p id="car"></p>
-    <!--Arrayet med favorit bilerne-->
-    <script>
-        var cars = ["Ford Mustang", "Mercedes AMG", "Nissan skyline"];
-        document.getElementById('car').innerHTML = cars ;
-    </script>
-    <br>
-    <p>Har du en lille kommentar kan du skriven den her uder</p>
-    <!--Her kan du skrive en kommentar ind-->
-    <input type="text" id="textField"> 
-    <button class="button">Indsend</button> 
-    <br>
-    <button class="button" type="button" onclick="add()">Klick mig</button>
-    <button class="button" type="button" onclick="remove()">klick mig</button>
-    <div>
-        <p id="en"></p>
-        <p id="to">tekst 2</p>
+    <div class="grid">
+        <div class="Overskrift">
+            <ul>
+                <li><a href="index.html">Startside</a></li>
+                <li><a href="aboutMe.html">Om mig side</a></li>
+            </ul>
+        
+            <h1 id="Header">Denne side er om mig</h1> 
+        </div>
+        <br>
+        <div class="omMig">
+            <br>
+            <p id="aboutm">Jeg hedder Jeppe og jeg er ikke særlig god til html/css/js</p>
+            <br>
+            <p>Mine favorit biler er: </p>
+            <!--Viser hvilke mine favorit biler er-->
+            <p id="car"></p>
+            <!--Arrayet med favorit bilerne-->
+            <script>
+            var cars = ["Ford Mustang", "Mercedes AMG", "Nissan skyline"];
+            document.getElementById('car').innerHTML = cars ;
+            </script>
+        </div>
+        <div class="heybuddy">
+            <br>
+            <p>Har du en lille kommentar kan du skriven den her under</p>
+            <!--Her kan du skrive en kommentar ind-->
+            <input type="text" id="textField"> 
+            <button class="button">Indsend</button> 
+            <br>
+            <button class="button" type="button" onclick="add()">Klick mig</button>
+            <button class="button" type="button" onclick="remove()">klick mig</button>
+            <div>
+                <p id="en"></p>
+                <p id="to">tekst 2</p>
+            </div>
+        </div>
     </div>
-    
 </body>
