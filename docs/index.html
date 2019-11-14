@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="scripts.js"></script>  
+<script type="text/javascript" src="jq.js"></script>
 <body class="bodyet">
     <ul>
         <li><a href="index.html">Startside</a></li>
@@ -19,18 +20,27 @@
     <a href="http://www.borupif.dk/">Fodbold klub</a>
     <br>
     <p >Godt nok ikke billede af mig men det er vel også ok</p>
-    <div id="image">
+    <div class="buttonforimg" id="image">
         <img id="demo" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="sky with nordenlight???">
     </div>
     <br>
     <!--Denne knap fjerner et billede fra siden-->
     <button class="button" id="demo" 
-        onclick="buttonClickHide()">Klik for at skjule billedet
+        onclick="buttonClickShow()">Klik for at vise billedet
     </button>
     <!--Denne knap tilføjer et billede til siden-->
     <button class="button" id="demo" 
-        onclick="buttonClickShow()">Klik for at se billedet
+        onclick="buttonClickHide()">Klik for at skulje billedet
     </button>
+    <button class="buttonimg">Klik for at vise/skulje billede</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").toggle();
+            });
+        });
+    </script>
+    
     <br>
     <!--Når man trykker på denne knap viser den tid og dato-->
     <button onclick="this.innerHTML=Date()">Klokken er?</button>
@@ -41,10 +51,5 @@
         <input type="radio" name="er du sej" value="Nej">Nej<br>
         <input type="radio" name="er du sej" value="Måske">Det ved jeg ikke<br>
     </form>
-
-
-
-
-
 
 </body>

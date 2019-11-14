@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="scripts.js"></script>  
+<script type="text/javascript" src="jq.js"></script>
 
 <body>
     <div class="grid">
@@ -28,13 +29,14 @@
         </div>
         <div class="heybuddy">
             <br>
-            <p>Har du en lille kommentar kan du skriven den her under</p>
+            <p>Har du en lille kommentar, kan du skriven den her under</p>
             <!--Her kan du skrive en kommentar ind-->
-            <input type="text" id="textField"> 
-            <button class="button">Indsend</button> 
+            <input id="kommentarfield" type="text" id="textField"> 
+            <input type="submit" class="button"> 
+
             <br>
-            <button class="button" type="button" onclick="add()">Klick mig</button>
-            <button class="button" type="button" onclick="remove()">klick mig</button>
+            <button class="button" type="button" onclick="add()">Klik mig</button>
+            <button class="button" type="button" onclick="remove()">klik mig</button>
             <div>
                 <p id="en"></p>
                 <p id="to">tekst 2</p>

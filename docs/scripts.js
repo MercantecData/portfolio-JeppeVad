@@ -1,7 +1,7 @@
-function buttonClickHide() { //Denne fjerner billede
+function buttonClickShow() { //Denne viser billede
     document.getElementById('demo').style.display='none'
 }
-function buttonClickShow() { //Denne viser billede
+function buttonClickHide() { //Denne fjerner billede
     document.getElementById('demo').style.display='block'
 }
 function add() {
