@@ -1,0 +1,122 @@
+Dokumentation for virksomhed
+
+CREATE DATABASE firm database
+
+CREATE TABLE departments (
+	department_ID int(11) NOT NULL AUTO-INCREMENT,
+	department_name varchar(255),
+	PRIMARY KEY(department_ID)
+)
+
+CREATE TABLE department_1 (
+	department_manager int(11),
+	department_employee int(11),
+	foreign key(department_manager) reference empolyee(employee_ID),
+	foreign key(department_employee) reference empolyee(employee_ID)
+)
+CREATE TABLE department_2 (
+	department_manager int(11),
+	department_employee int(11),
+	foreign key(department_manager) reference empolyee(employee_ID),
+	foreign key(department_employee) reference empolyee(employee_ID)
+)
+CREATE TABLE department_3 (
+	department_manager int(11),
+	department_employee int(11),
+	foreign key(department_manager) reference empolyee(employee_ID),
+	foreign key(department_employee) reference empolyee(employee_ID)
+)
+CREATE TABLE department_employees (
+	department_ID int(11),
+	department_employees,
+	foreign key(department_ID) reference departments(department_ID)
+)
+CREATE TABLE employee (
+	employee_ID int(11) NOT NULL AUTO-INCREMENT,
+	full_name varchar(255),
+	email varchar(255)
+)
+CREATE TABLE salaries (
+	employee_ID int(11),
+	salary decimal(11),
+	foreign key(employee_ID) reference employee(employee_ID)
+)
+CREATE TABLE titles (
+	employee_ID int(11),
+	title_name varchar(255),
+	foreign key(employee_ID) reference employee(employee_ID)
+)
+
+INSERT INTO departments('department_ID', 'department_name')
+VALUES ('', 'department_1');
+INSERT INTO departments('department_ID', 'department_name')
+VALUES ('', 'department_2');
+INSERT INTO departments('department_ID', 'department_name')
+VALUES ('', 'department_3');
+
+
+INSERT INTO department_1('department_manager', 'department_employee')
+VALUES ('1', '2');
+INSERT INTO department_2('department_manager', 'department_employee')
+VALUES ('3', '4');
+INSERT INTO department_3('department_manager', 'department_employee')
+VALUES ('5', '6');
+
+
+
+
+
+INSERT INTO department_employees('department_ID', 'department_employees')
+VALUES ('1', '2');
+INSERT INTO department_employees('department_ID', 'department_employees')
+VALUES ('2', '2');
+INSERT INTO department_employees('department_ID', 'department_employees')
+VALUES ('3', '2');
+
+
+
+
+INSERT INTO employee('employee_ID', 'full_name', 'email')
+VALUES ('', 'Jeppe Vad', 'jeppevad@gmail.com');
+INSERT INTO employee('employee_ID', 'full_name', 'email')
+VALUES ('', 'Mathias Holst', 'mathiasholst@gmail.com');
+INSERT INTO employee('employee_ID', 'full_name', 'email')
+VALUES ('', 'Magnus Bjørn', 'magnusbjørn@gmail.com');
+INSERT INTO employee('employee_ID', 'full_name', 'email')
+VALUES ('', 'Ching Chong', 'chingchong@gmail.com');
+INSERT INTO employee('employee_ID', 'full_name', 'email')
+VALUES ('', 'Mark Klausen', 'markklausen@gmail.com');
+INSERT INTO employee('employee_ID', 'full_name', 'email')
+VALUES ('', 'Ole Henriksen', 'olehenriksen@gmail.com');
+
+
+
+
+INSERT INTO salaries('employee_ID', 'salary')
+VALUES ('1', '1500');
+INSERT INTO salaries('employee_ID', 'salary')
+VALUES ('2', '1000');
+INSERT INTO salaries('employee_ID', 'salary')
+VALUES ('3', '1500');
+INSERT INTO salaries('employee_ID', 'salary')
+VALUES ('4', '1000');
+INSERT INTO salaries('employee_ID', 'salary')
+VALUES ('5', '1500');
+INSERT INTO salaries('employee_ID', 'salary')
+VALUES ('6', '1000');
+
+
+
+
+INSERT INTO titles('employee_ID', 'title_name')
+VALUES ('1', 'Department manager')
+INSERT INTO titles('employee_ID', 'title_name')
+VALUES ('2', 'Employee')
+INSERT INTO titles('employee_ID', 'title_name')
+VALUES ('3', 'Department manager')
+INSERT INTO titles('employee_ID', 'title_name')
+VALUES ('4', 'Employee')
+INSERT INTO titles('employee_ID', 'title_name')
+VALUES ('5', 'Department manager')
+INSERT INTO titles('employee_ID', 'title_name')
+VALUES ('6', 'Employee')
