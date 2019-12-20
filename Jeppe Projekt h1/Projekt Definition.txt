@@ -1,0 +1,30 @@
+Jeppe Vad - Projekt Definition
+
+Hvad der skal laves: 
+Website
+Database
+
+Hvad skal der være på hjemmesiden: 
+Der skal være et login system til admins 
+Der skal være en forsiden med en artikel.
+Der skal være en side der fortæller lidt om projektet? Eller om siden?
+Der skal være navigations bar
+Der skal være en side der viser alle brugerne fra Databasen
+
+
+Hvad skal der være på databasen:
+Databasen skal kunne gemme brugernavn og kodeord
+Databasen skal kryptere kodeordene
+
+Hvilke fag indgår i dit projekt og hvordan:
+Fag der indgår i Clientside programmering, og database programmering 
+Der vil være html/css til at designe hjemmesiden
+Der vil være database programmering til at oprette table, og til at tilføje brugere til tablet.
+
+Hvad skal der til for at dit projekt er en succes?:
+At hjemmesiden kan tilføje de brugere som opretter sig til databasen 
+At hjemmesiden kan vise alle brugerne på en side.
+
+Hvor langt regner du med at nå inden slutningen af mandag.
+Jeg regner med at jeg når at lave et fremgangs diagram og få godkendt mit projekt.
+

@@ -1,0 +1,32 @@
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+.header {
+    padding: 5px;
+    text-align: center;
+    background: lightgoldenrodyellow;
+    color: black;
+    font-size: 20px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+.topnav a {
+    float: left;
+    color: darkgrey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: lightblue;
+    color: black;
+}
+.topnav a:active {
+    background-color: lightblue;
+    color: black;
+}

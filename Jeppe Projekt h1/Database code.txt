@@ -1,0 +1,9 @@
+Kode brugt til databasen:
+
+//Table
+CREATE TABLE Brugere ( 
+	ID int NOT NULL AUTO_INCREMENT, 
+	Brugernavn varchar(20), 
+	PSW varchar(20), 
+	PRIMARY KEY(ID) 
+)

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Projekt opgave</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </header>
+    <body>
+        <div class="header"> <!--Header-->
+            <h1>Projekt opgave</h1>
+            <p>Lavet af Jeppe Vad</p>
+        </div>
+        <div class="topnav"> <!--Navigation bar-->
+            <a href="index.html">Start</a>
+            <a href="displayData.php">Brugere</a>
+            <a href="login.php">Log-in</a>
+            <a class="active" href="#signUp">Sign up</a>
+        </div>
+        <div>
+            <form action="data.php" method="POST">
+                <div class="container">
+                    <h1>Sign up</h1>
+                    <p>Udfyld felterne for at registere dig som bruger</p>
+                    <hr>
+
+                    <label for="brugernavn"><b>Brugernavn</b></label>
+                    <input type="text" placeholder="Brugernavn" name="brugernavn" required>
+
+                    <label for="kodeord"><b>Kodeord</b></label>
+                    <input type="password" placeholder="Kodeord" name="kodeord" required>
+
+                    <label for="kodeord-gentag"><b>Gentag kodeord</b></label>
+                    <input type="password" placeholder="Gentag kodeord" name="kodeord-gentag" required>
+
+                    <button type="submit" class="signupbotton" name="reg_user" >Register</button>
+                    
+                    
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
